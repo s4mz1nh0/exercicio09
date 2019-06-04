@@ -3,11 +3,11 @@ package Atividade3;
 
 public class Teste {
     public static void main(String[] args){
-        Pessoa p = new Pessoa("Samuel","R: 1",555555555);
-        Fornecedor f = new Fornecedor("Samara","R: 5",55555555,2000,500);
-        Empregado e = new Empregado("Sulamitha","R: 7",444444444,0001,1500,7);
-        Administrador a = new Administrador("Iza","R: 21",666666666,0003,1750,5,500);
-        Operario o = new Operario("Jurandy","R: 4",666666666,0007,1000,10,300,5);
+        Pessoa p = new Pessoa("Samuel","R: 223",555555555);
+        Fornecedor f = new Fornecedor("Samara","R: 211",55555555,2004,500);
+        Empregado e = new Empregado("Sulamitha","R: 225",444444444,0003,1500,7);
+        Administrador a = new Administrador("Iza","R: 121",666666666,0002,1750,5,500);
+        Operario o = new Operario("Jurandy","R: 004",666666666,0007,1001,10,300,5);
         
         System.out.println("FORNECEDOR");
         System.out.println(f.obterSaldo());

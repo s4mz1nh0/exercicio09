@@ -5,8 +5,8 @@ public class Fornecedor extends Pessoa {
     private double valorCredito;
     private double valorDivida;
     
-    public Fornecedor(String n, String e, int t,double c,double d) {
-        super(n, e, t);
+    public Fornecedor(String nome, String endereço, int telefone,double c,double d) {
+        super(nome, endereço, telefone);
         setValorC(c);
         setValorD(d);
         

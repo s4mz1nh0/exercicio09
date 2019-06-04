@@ -6,10 +6,10 @@ public class Pessoa {
     private String endereço;
     private int telefone;
     
-    public Pessoa(String n,String e,int t){
-        setNome(n);
-        setEndereço(e);
-        setTelefone(t);
+    public Pessoa(String nome,String endereço,int telefone){
+        setNome(nome);
+        setEndereço(endereço);
+        setTelefone(telefone);
     }
     public String getNome(){
         return this.nome;

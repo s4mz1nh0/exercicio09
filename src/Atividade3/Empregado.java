@@ -7,8 +7,8 @@ public class Empregado extends Pessoa{
     private double salarioBase;
     private double imposto;
     
-    public Empregado(String n, String e, int t, int s, double x, double i){
-        super(n, e, t);
+    public Empregado(String nome, String endereço, int telefone, int s, double x, double i){
+        super(nome, endereço, telefone);
         setCodSetor(s);
         setSalBase(x);
         setImposto(i);

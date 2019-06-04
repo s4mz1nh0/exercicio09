@@ -5,8 +5,8 @@ public class Administrador extends Empregado{
     
     private double ajudadeCusto;
     
-    public Administrador(String nome, String end, int tel, int s, double x, double i, double a){
-        super(nome, end, tel, s, x, i);
+    public Administrador(String nome, String endereço, int telefone, int s, double x, double i, double a){
+        super(nome, endereço, telefone, s, x, i);
         setAjudaCusto(a);
         
     }
