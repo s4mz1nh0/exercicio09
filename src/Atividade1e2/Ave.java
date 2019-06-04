@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Atividade1e2;
 
-/**
- *
- * @author P4N
- */
-public class Ave {
+public class Ave extends Animal {
     
+    private boolean voa;
+    
+    public Ave(String n,boolean v) {
+        super(n);
+        setVoa(v);
+    }
+    public boolean getVoa(){
+        return this.voa;
+    }
+    public void setVoa(boolean v){
+        this.voa=v;
+    }
+    public void talk(){
+        System.out.println("Piu Piu");
+    }
 }

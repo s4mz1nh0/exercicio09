@@ -1,14 +1,22 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Atividade1e2;
 
-/**
- *
- * @author P4N
- */
-public class Vaca {
+public class Vaca extends Mamifero{
     
+    private boolean temLeite;
+    
+    public Vaca(String n, int p,boolean l) {
+        super(n, p);
+        setTemLeite(l);
+    }
+    public boolean getTemLeite(){
+        return this.temLeite;
+    }
+    public void setTemLeite(boolean l){
+        this.temLeite=l;
+    }
+    public void talk(){
+        System.out.println("Muuuu");
+       
+    }
 }

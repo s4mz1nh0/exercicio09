@@ -1,14 +1,21 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package Atividade1e2;
 
-/**
- *
- * @author P4N
- */
 public class Animal {
+    private String nome;
     
+    public Animal(String n){
+        setNome(n);
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public void setNome(String n){
+        this.nome=n;
+    }
+    public void imprime(){
+        System.out.println(this.getNome());
+    }
+    public void talk(){
+    }
 }

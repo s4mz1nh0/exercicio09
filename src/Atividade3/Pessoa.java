@@ -1,39 +1,33 @@
-package atividade3;
+package Atividade3;
 
 public class Pessoa {
-
-    private String nome;
-    private String endereco;
-    private String telefone;
-
-    public Pessoa(String nome, String endereco,String telefone) {
-        setNome(nome);
-        setEndereco(endereco);
-        setTelefone(telefone);
-    }
-
-    public String getNome() {
-        return nome;
-    }
-
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
-    public String getEndereco() {
-        return endereco;
-    }
-
-    public void setEndereco(String endereco) {
-        this.endereco = endereco;
-    }
-
-    public String getTelefone() {
-        return telefone;
-    }
-
-    public void setTelefone(String telefone) {
-        this.telefone = telefone;
     
-}
+    private String nome;
+    private String endereço;
+    private int telefone;
+    
+    public Pessoa(String n,String e,int t){
+        setNome(n);
+        setEndereço(e);
+        setTelefone(t);
+    }
+    public String getNome(){
+        return this.nome;
+    }
+    public String getEndereo(){
+        return this.endereço;
+    }
+    public int getTelefone(){
+        return this.telefone;
+    }
+    public void setNome(String n){
+        this.nome=n;
+    }
+    public void setEndereço(String e){
+        this.endereço=e;
+    }
+    public void setTelefone(int t){
+        this.telefone=t;
+    }
+    
 }

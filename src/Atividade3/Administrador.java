@@ -1,26 +1,22 @@
 
 package Atividade3;
 
-public class Administrador extends Empregado {
-
-    private double ajudaDeCusto;
-
-    public Administrador(String nome, String endereco,
-            String telefone, int codigoSetor,
-            double salarioBase, double imposto,double ajudaDeCusto) {
-        super(nome, endereco, telefone, codigoSetor,salarioBase, imposto);
-        setAjudaDeCusto(ajudaDeCusto);
+public class Administrador extends Empregado{
+    
+    private double ajudadeCusto;
+    
+    public Administrador(String nome, String end, int tel, int s, double x, double i, double a){
+        super(nome, end, tel, s, x, i);
+        setAjudaCusto(a);
+        
     }
-
-    public double getAjudaDeCusto() {
-        return ajudaDeCusto;
+    public double getAjudaCusto(){
+        return this.ajudadeCusto;
     }
-
-    public void setAjudaDeCusto(double ajudaDeCusto) {
-        this.ajudaDeCusto = ajudaDeCusto;
+    public void setAjudaCusto(double a){
+        this.ajudadeCusto=a;
     }
-
-    public double calcularSalario() {
-        return super.calcularSalario() + getAjudaDeCusto();
+    public double calcularSalario(){
+        return this.getAjudaCusto()+super.calcularSalario();
     }
 }

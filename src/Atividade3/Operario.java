@@ -1,36 +1,29 @@
 package Atividade3;
 
-public class Operario extends Empregado {
-
-    private double valorProducao;
+public class Operario extends Empregado{
+    
+    private double valorProduçao;
     private double comissao;
-
-    public Operario(String nome, String endereco,
-            String telefone, int codigoSetor,
-            double salarioBase, double imposto,
-            double valorProducao, double comissao) {
-        super(nome,endereco,telefone,codigoSetor,salarioBase,imposto);
-        setValorProducao(valorProducao);
-        setComissao(comissao);
+    
+    public Operario(String n, String e, int t, int s, double x, double i, double p, double c){
+        super(n, e, t, s, x, i);
+        setValorP(p);
+        setComissao(c);
+        
     }
-
-    public double getValorProducao() {
-        return valorProducao;
+    public double getValorP(){
+        return this.valorProduçao;
     }
-
-    public void setValorProducao(double valorProducao) {
-        this.valorProducao = valorProducao;
+    public double getComissao(){
+        return this.comissao;
     }
-
-    public double getComissao() {
-        return comissao;
+    public void setValorP(double p){
+        this.valorProduçao=p;
     }
-
-    public void setComissao(double comissao) {
-        this.comissao = comissao;
+    public void setComissao(double c){
+        this.comissao=c;
     }
-
-    public double calcularSalario() {
-        return super.calcularSalario() + (getValorProducao() * getComissao() / 100);
+    public double calcularSalario(){
+        return super.calcularSalario()+((this.getValorP()*this.getComissao())/100);
     }
 }
